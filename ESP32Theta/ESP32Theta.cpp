@@ -38,8 +38,8 @@ Theta theta;
 xQueueHandle event_queue;
 
 #ifdef EMULATE
-#define DEFAUT_SSID "KELPNET_UP"
-#define DEFAULT_PWD "BabsDeKleineRat"
+#define DEFAUT_SSID "YOURSSID"
+#define DEFAULT_PWD "Password"
 #else
 #define DEFAUT_SSID "THETAXS00130913.OSC"
 #define DEFAULT_PWD "00130913"
