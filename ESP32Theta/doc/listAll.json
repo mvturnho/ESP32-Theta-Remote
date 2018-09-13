@@ -1,0 +1,104 @@
+Acquires a list of still image files and movie files.
+
+Parameters
+Name				Type	Description
+entryCount			Integer	Number of still image files and movie files to acquire.
+continuationToken	String	(Optional)	A token to resume reading at the end of the previous _listAll result.
+detail				Boolean	(Optional)	Specifies whether or not to acquire the file details.
+							Default is "true" and file details are acquired.
+							If set to "false", "name", "uri", "size", and "dateTime" can only be acquired.
+sort				String	(Optional) Specifies the sort order.
+							Chose from "newest" (in the descending order of dateTime values) and "oldest" (in the ascending order of dateTime values).
+							Default is "newest".
+
+
+{
+	"name": "camera._listAll",
+	"parameters": {
+		"entryCount": 2,
+		"detail": true,
+		"sort": "newest"
+	}
+}
+{
+	"name": "camera._listAll",
+	"state": "done",
+	"results": {
+		"entries": [{
+				"name": "R0011652.JPG",
+				"uri": "100RICOH/R0011652.JPG",
+				"size": 3922379,
+				"dateTimeZone": "2018:03:08 08:27:12+01:00",
+				"width": 5376,
+				"height": 2688,
+				"_intervalCaptureGroupId": "12A9E76914D086A0"
+			}, {
+				"name": "R0011651.JPG",
+				"uri": "100RICOH/R0011651.JPG",
+				"size": 3912516,
+				"dateTimeZone": "2018:03:08 08:27:04+01:00",
+				"width": 5376,
+				"height": 2688,
+				"_intervalCaptureGroupId": "12A9E76914D086A0"
+			}
+		],
+		"totalEntries": 296,
+		"continuationToken": "293"
+	}
+}
+{
+	"name": "camera._listAll",
+	"parameters": {
+		"entryCount": 2,
+		"detail": false,
+		"sort": "newest"
+	}
+}
+{
+	"name": "camera._listAll",
+	"state": "done",
+	"results": {
+		"entries": [{
+				"name": "R0011652.JPG",
+				"uri": "100RICOH/R0011652.JPG",
+				"size": 3922379,
+				"dateTime": "2018:03:08 08:27:16"
+			}, {
+				"name": "R0011651.JPG",
+				"uri": "100RICOH/R0011651.JPG",
+				"size": 3912516,
+				"dateTime": "2018:03:08 08:27:08"
+			}
+		],
+		"totalEntries": 296,
+		"continuationToken": "293"
+	}
+}
+{
+	"name": "camera._listAll",
+	"parameters": {
+		"entryCount": 2,
+		"detail": false,
+		"sort": "oldest"
+	}
+}
+{
+	"name": "camera._listAll",
+	"state": "done",
+	"results": {
+		"entries": [{
+				"name": "R0011347.JPG",
+				"uri": "100RICOH/R0011347.JPG",
+				"size": 4078780,
+				"dateTime": "2017:11:09 12:36:12"
+			}, {
+				"name": "R0011348.MP4",
+				"uri": "100RICOH/R0011348.MP4",
+				"size": 39290869,
+				"dateTime": "2017:11:10 09:42:50"
+			}
+		],
+		"totalEntries": 296,
+		"continuationToken": "2"
+	}
+}

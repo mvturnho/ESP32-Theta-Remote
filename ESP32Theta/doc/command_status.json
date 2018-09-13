@@ -1,0 +1,37 @@
+Acquires the execution status of the command.
+id	String	Command ID acquired by Commands/Execute  (takePicture)
+
+state	String	Command execution status  Either "done", "inProgress" or "error" is returned
+
+{
+    "id": "1"
+}
+
+{
+    "name": "camera.takePicture",
+    "state": "done",
+    "results": {
+        "fileUri": "100RICOH/R0011645.JPG"
+    }
+}
+
+{
+    "id": "11"
+}
+
+{
+    "name": "camera.takePicture",
+    "state": "inProgress",
+    "id": "11",
+    "progress": {
+        "completion": 0
+    }
+}
+
+{
+    "name": "camera.takePicture",
+    "state": "done",
+    "results": {
+        "fileUri": "100RICOH/R0011661.JPG"
+    }
+}

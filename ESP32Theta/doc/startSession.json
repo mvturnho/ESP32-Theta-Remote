@@ -1,0 +1,16 @@
+Starts the session. Issues the session ID.
+
+{
+	"name": "camera.startSession",
+	"parameters": {
+		"timeout": 180
+	}
+}
+{
+	"name": "camera.startSession",
+	"state": "done",
+	"results": {
+		"sessionId": "SID_0002",
+		"timeout": 180
+	}
+}

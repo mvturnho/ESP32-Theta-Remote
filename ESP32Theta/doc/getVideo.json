@@ -1,0 +1,30 @@
+Acquires video.
+
+Parameters
+Name		Type	Description
+fileUri		String	ID of the file to be acquired
+type		String	Type of file to be acquired
+					Specify "thumb" or "full" 
+					Set to "full" by default if unspecified
+					(thumb: Thumbnail image, full: Original size video)
+
+
+{
+	"name": "camera._getVideo",
+	"parameters": {
+		"fileUri":"100RICOH/R0011581.MP4",
+		"type":"thumb"
+	}
+}
+
+Content-Length →58296
+Content-Type →image/jpeg
+
+{
+	"name": "camera._getVideo",
+	"parameters": {
+		"fileUri":"100RICOH/R0011581.MP4",
+		"type":"thumb"
+	}
+}
+

@@ -1,0 +1,21 @@
+
+Starts still image shooting.
+
+If exposureDelay is enabled, self-timer shooting is started.
+
+{
+	"name": "camera.takePicture",
+	"parameters": {
+		"sessionId": "SID_0002"
+	}
+}
+
+{
+    "name": "camera.takePicture",
+    "state": "inProgress",
+    "id": "1",
+    "progress": {
+        "completion": 0
+    }
+}
+

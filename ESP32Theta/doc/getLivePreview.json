@@ -1,0 +1,14 @@
+Acquires the Live View. Can only be executed in still image capture mode. 
+Data acquisition is finished when the camera is operated, shooting starts or the shooting mode is switched.
+
+Parameters
+Name		Type	Description
+sessionId	String	Session ID 
+					Specify the value acquired by camera.startSession
+
+{
+	"name": "camera._getLivePreview",
+	"parameters": {
+		"sessionId": "SID_0002"
+	}
+}

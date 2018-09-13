@@ -1,0 +1,13 @@
+Stops interval or video shooting.
+
+{
+	"name": "camera._stopCapture",
+	"parameters": {
+		"sessionId": "SID_0002"
+	}
+}
+
+{
+    "name": "camera._stopCapture",
+    "state": "done"
+}

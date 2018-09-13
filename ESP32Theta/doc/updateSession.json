@@ -1,0 +1,16 @@
+Updates the session. Extends the validity period of the session.
+
+{
+	"name": "camera.updateSession",
+	"parameters": {
+		"sessionId": "SID_0002"
+	}
+}
+{
+	"name": "camera.updateSession",
+	"state": "done",
+	"results": {
+		"sessionId": "SID_0002",
+		"timeout": 180
+	}
+}

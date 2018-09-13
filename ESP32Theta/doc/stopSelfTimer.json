@@ -1,0 +1,15 @@
+{
+	"name": "camera._stopSelfTimer",
+	"parameters":{
+    
+	}
+}
+
+{
+    "name": "camera._stopSelfTimer",
+    "state": "error",
+    "error": {
+        "code": "disabledCommand",
+        "message": "Command executed is currently disabled."
+    }
+}

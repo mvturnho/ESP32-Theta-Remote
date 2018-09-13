@@ -1,0 +1,100 @@
+Acquires the still image file list.
+
+Parameters
+Name				Type	Description
+entryCount			Integer	No. of still image files to be acquired
+maxSize				Integer	Fixed value
+							for maximum size of thumbnails: 160
+					Required parameter when includeThumb is true
+continuationToken	String	(Optional) 
+					Token 	for reading the continuation from the previous listImages.
+includeThumb		Boolean	(Optional) 
+							Whether thumbnails are required 
+							Default is true and thumbnails are acquired
+							When includeThumb is true, you can get only one file. If you want to get a file list, it is recommended that you set includeThumb to false
+
+{
+	"name": "camera.listImages",
+	"parameters": {
+		"entryCount": 5,
+		"includeThumb": false
+	}
+}
+{
+	"name": "camera.listImages",
+	"state": "done",
+	"results": {
+		"entries": [{
+				"name": "R0011652.JPG",
+				"uri": "100RICOH/R0011652.JPG",
+				"size": 3922379,
+				"dateTimeZone": "2018:03:08 08:27:12+01:00",
+				"width": 5376,
+				"height": 2688,
+				"_intervalCaptureGroupId": "12A9E76914D086A0"
+			}, {
+				"name": "R0011651.JPG",
+				"uri": "100RICOH/R0011651.JPG",
+				"size": 3912516,
+				"dateTimeZone": "2018:03:08 08:27:04+01:00",
+				"width": 5376,
+				"height": 2688,
+				"_intervalCaptureGroupId": "12A9E76914D086A0"
+			}, {
+				"name": "R0011650.JPG",
+				"uri": "100RICOH/R0011650.JPG",
+				"size": 3898135,
+				"dateTimeZone": "2018:03:08 08:26:56+01:00",
+				"width": 5376,
+				"height": 2688,
+				"_intervalCaptureGroupId": "12A9E76914D086A0"
+			}, {
+				"name": "R0011649.JPG",
+				"uri": "100RICOH/R0011649.JPG",
+				"size": 3915096,
+				"dateTimeZone": "2018:03:08 08:26:48+01:00",
+				"width": 5376,
+				"height": 2688,
+				"_intervalCaptureGroupId": "12A9E76914D086A0"
+			}, {
+				"name": "R0011648.JPG",
+				"uri": "100RICOH/R0011648.JPG",
+				"size": 3889373,
+				"dateTimeZone": "2018:03:08 08:26:40+01:00",
+				"width": 5376,
+				"height": 2688,
+				"_intervalCaptureGroupId": "12A9E76914D086A0"
+			}
+		],
+		"totalEntries": 279,
+		"continuationToken": "273"
+	}
+}
+{
+	"name": "camera.listImages",
+	"parameters": {
+		"entryCount": 2,
+		"maxSize": 160,
+		"includeThumb": true
+	}
+}
+{
+	"name": "camera.listImages",
+	"state": "done",
+	"results": {
+		"entries": [{
+				"name": "R0011652.JPG",
+				"uri": "100RICOH/R0011652.JPG",
+				"size": 3922379,
+				"dateTimeZone": "2018:03:08 08:27:12+01:00",
+				"width": 5376,
+				"height": 2688,
+				"thumbnail": "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",
+				"_thumbSize": 3500,
+				"_intervalCaptureGroupId": "12A9E76914D086A0"
+			}
+		],
+		"totalEntries": 279,
+		"continuationToken": "277"
+	}
+}

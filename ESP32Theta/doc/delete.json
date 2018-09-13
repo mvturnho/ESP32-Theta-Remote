@@ -1,0 +1,11 @@
+{
+	"name": "camera.delete",
+	"parameters": {
+		"fileUri": "100RICOH/R0011652.JPG"
+	}
+}
+{
+	"name": "camera.delete",
+	"state": "done"
+
+}

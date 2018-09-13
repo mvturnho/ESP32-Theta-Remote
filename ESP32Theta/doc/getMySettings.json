@@ -1,0 +1,37 @@
+{
+	"name": "camera._getMySetting",
+	"parameters": {
+		"optionNames": [
+		"_colorTemperature", 
+		"fileFormat", 
+		"iso", 
+		"shutterSpeed",
+		"whiteBalance", 
+		"exposureCompensation", 
+		"exposureProgram",
+		"_filter"
+		]
+	}
+}
+
+
+{
+    "name": "camera._getMySetting",
+    "state": "done",
+    "results": {
+        "options": {
+            "_colorTemperature": 5000,
+            "fileFormat": {
+                "type": "jpeg",
+                "width": 5376,
+                "height": 2688
+            },
+            "iso": 0,
+            "shutterSpeed": 0,
+            "whiteBalance": "auto",
+            "exposureCompensation": 0,
+            "exposureProgram": 2,
+            "_filter": "off"
+        }
+    }
+}

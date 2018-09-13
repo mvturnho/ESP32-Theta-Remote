@@ -1,0 +1,11 @@
+Turns the wireless LAN off.
+{
+	"name": "camera._finishWlan",
+	"parameters": {
+		"sessionId": "SID_0001"
+	}
+}
+{
+	"name": "camera._finishWlan",
+	"state": "done"
+}

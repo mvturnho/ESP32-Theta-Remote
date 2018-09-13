@@ -1,0 +1,69 @@
+Property settings for shooting, the camera, etc.
+
+Check the properties that can be set and specifications by the API v2.0 reference options category or camera.getOptions.
+
+There is a detailed example of the request in Getting Started.
+
+Parameters
+Name 		Type Description
+sessionId 	String Session ID
+					Specify the value acquired by camera.startSession
+options		Object 	Set of option names and setting values to be set in JSON format
+{
+	"name": "camera.getOptions",
+	"parameters": {
+		"sessionId": "12ABC3",
+		"options": {
+			"_captureNumber": 0,
+			"aperture": 2,
+			"clientVersion": 1,
+			"_colorTemperature": 5000,
+			"fileFormat": {
+				"type": "jpeg",
+				"width": 5376,
+				"height": 2688
+			},
+			"gpsInfo": {
+				"lat": 65535,
+				"lng": 65535,
+				"_altitude": 0,
+				"_dateTimeZone": "",
+				"_datum": ""
+			},
+			"_HDMIreso": "Auto",
+			"iso": 0,
+			"_latestEnabledExposureDelayTime": 5,
+			"offDelay": 1800,
+			"remainingPictures": 927,
+			"remainingSpace": 4618736640,
+			"shutterSpeed": 0,
+			"_shutterVolume": 10,
+			"sleepDelay": 1800,
+			"totalSpace": 8060403712,
+			"whiteBalance": "auto",
+			"_wlanChannel": 0,
+			"_autoBracket": {
+				"_bracketNumber": 2,
+				"_bracketParameters": [{
+						"iso": 400,
+						"shutterSpeed": 0.004,
+						"_colorTemperature": 5000
+					}, {
+						"iso": 400,
+						"shutterSpeed": 0.004,
+						"_colorTemperature": 5000
+					}
+				]
+			},
+			"_compositeShootingOutputInterval": 0,
+			"_compositeShootingTime": 86400,
+			"_filter": "off",
+			"_captureInterval": 8,
+			"dateTimeZone": "2018:03:08 08:17:19+01:00",
+			"exposureCompensation": 0,
+			"exposureDelay": 0,
+			"exposureProgram": 2,
+			"captureMode": "image"
+		}
+	}
+}

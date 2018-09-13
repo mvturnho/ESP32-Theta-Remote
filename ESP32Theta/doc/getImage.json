@@ -1,0 +1,31 @@
+Acquires images.
+
+Parameters
+Name		Type	Description
+fileUri		String	ID of the file to be acquired
+_type		String	Type of file to be acquired
+					Specify "thumb" or "full" 
+					Set to "full" by default if unspecified
+					(thumb: Thumbnail image, full: Original size image)
+
+{
+	"name": "camera.getImage",
+	"parameters": {
+		"fileUri":"100RICOH/R0011651.JPG",
+		"_type":"thumb"
+	}
+}
+
+Content-Length →3533
+Content-Type →image/jpeg
+
+{
+	"name": "camera.getImage",
+	"parameters": {
+		"fileUri":"100RICOH/R0011651.JPG",
+		"_type":"full"
+	}
+}
+
+Content-Length →3912516
+Content-Type →image/jpeg

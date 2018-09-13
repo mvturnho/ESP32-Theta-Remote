@@ -1,0 +1,47 @@
+{
+	"name": "camera.getMetadata",
+	"parameters": {
+		"fileUri": "100RICOH/R0011581.MP4"
+	}
+}
+{
+	"name": "camera.getMetadata",
+	"state": "done",
+	"results": {
+		"exif": {
+			"ExifVersion": "0230",
+			"ImageDescription": "",
+			"DateTime": "2018:03:08 08:27:04",
+			"ImageWidth": 5376,
+			"ImageLength": 2688,
+			"ColorSpace": 1,
+			"Compression": 6,
+			"Orientation": 1,
+			"Flash": 0,
+			"FocalLength": 0.75,
+			"WhiteBalance": 0,
+			"ExposureTime": 0.0167,
+			"FNumber": 2,
+			"ExposureProgram": 2,
+			"ISOSpeedRatings": 200,
+			"ApertureValue": 2,
+			"BrightnessValue": 1.6,
+			"ExposureBiasValue": 0,
+			"Make": "RICOH",
+			"Model": "RICOH THETA S",
+			"Software": "RICOH THETA S Ver 1.90         ",
+			"Copyright": "                                             ",
+			"MakerNote": ""
+		},
+		"xmp": {
+			"ProjectionType": "equirectangular",
+			"UsePanoramaViewer": "True",
+			"CroppedAreaImageWidthPixels": 5376,
+			"CroppedAreaImageHeightPixels": 2688,
+			"FullPanoWidthPixels": 5376,
+			"FullPanoHeightPixels": 2688,
+			"CroppedAreaLeftPixels": 0,
+			"CroppedAreaTopPixels": 0
+		}
+	}
+}
